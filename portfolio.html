@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Портфолио | StitchDrive</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="logo/favicon (3).ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Обновленная версия Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <!-- ===== HEADER ===== -->
+    <header>
+        <div class="contacts-block">
+            <div class="header-zone header-zone--left">
+                <div class="work-hours">
+                    <span class="work-hours__label">Время работы</span>
+                    <span class="work-hours__time">Пн-Пт: 09-19.00</span>
+                    <span class="work-hours__time">Сб-Вс: 09-17.00</span>
+                </div>
+            </div>
+            <div class="header-divider"></div>
+            <div class="header-zone header-zone--center">
+                <div class="logo-frame">
+                    <img class="logo" src="logo/fullLogo.jpg" alt="Логотип StitchDrive">
+                    <span class="logo-slogan">DRIVE AHEAD</span>
+                </div>
+            </div>
+            <div class="header-divider"></div>
+            <div class="header-zone header-zone--right">
+                <a href="tel:+375445431344" class="phone-pill">
+                    <span class="online-dot"></span>
+                    <i class="fa-solid fa-phone"></i>
+                    <span class="phone-pill__number">+375 44 543-13-44</span>
+                </a>
+                <div class="social-icons">
+                    <a href="#" aria-label="Telegram"><i class="fa-brands fa-telegram"></i></a>
+                    <a href="#" aria-label="Viber"><i class="fa-brands fa-viber"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="marquee">
+            <div class="marquee__track">
+                <span>Mercedes-Benz</span><span class="marquee__dot">•</span><span>BMW</span><span class="marquee__dot">•</span>
+                <span>Audi</span><span class="marquee__dot">•</span><span>Volkswagen</span><span class="marquee__dot">•</span>
+                <span>Renault</span><span class="marquee__dot">•</span><span>Hyundai</span><span class="marquee__dot">•</span>
+                <span>Kia</span><span class="marquee__dot">•</span><span>Toyota</span><span class="marquee__dot">•</span>
+                <!-- Дубль для бесшовности -->
+                <span>Mercedes-Benz</span><span class="marquee__dot">•</span><span>BMW</span><span class="marquee__dot">•</span>
+                <span>Audi</span><span class="marquee__dot">•</span><span>Volkswagen</span><span class="marquee__dot">•</span>
+                <span>Renault</span><span class="marquee__dot">•</span><span>Hyundai</span><span class="marquee__dot">•</span>
+                <span>Kia</span><span class="marquee__dot">•</span><span>Toyota</span><span class="marquee__dot">•</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===== NAV ===== -->
+    <nav>
+        <ul class="top-nav">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="about.html">О нас</a></li>
+            <li><a href="portfolio.html" class="active">Портфолио</a></li>
+            <li><a href="services.html">Услуги</a></li>
+            <li><a href="price.html">Цены</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+    </nav>
+
+    <!-- ===== ПОРТФОЛИО ===== -->
+    <main class="portfolio-page container">
+        
+        <div class="portfolio-header">
+            <span class="page-hero__badge">Наши работы</span>
+            <h1>Преображение <span class="text-accent">деталей</span></h1>
+            <p class="page-hero__text">Каждый проект — это индивидуальный подход. Оцените качество швов, подбор материалов и внимание к эргономике.</p>
+        </div>
+
+        <!-- Фильтры -->
+        <div class="portfolio-filter">
+            <button class="filter-btn is-active" data-filter="all">Все работы</button>
+            <button class="filter-btn" data-filter="alcantara">Алькантара</button>
+            <button class="filter-btn" data-filter="ecoc">Экокожа</button>
+            <button class="filter-btn" data-filter="natural">Натуральная кожа</button>
+            <button class="filter-btn" data-filter="carbon">Карбон</button>
+            <button class="filter-btn" data-filter="Nappa">Nappa</button>
+        </div>
+
+        <!-- Сетка работ -->
+        <div class="portfolio-grid">
+            
+            <!-- Работа 1: -->
+            <div class="portfolio-item" data-category="Алькантара">
+                <img src="portfolio/alcantara.jpg" alt="Перетяжка руля Алькантара">
+                <div class="portfolio-overlay">
+                    <span class="portfolio-overlay__category">Алькантара</span>
+                    <h3 class="portfolio-overlay__title">Полная перетяжка руля</h3>
+                    <span class="portfolio-overlay__icon"><i class="fas fa-arrow-right"></i></span>
+                </div>
+            </div>
+
+            <!-- Работа 2: -->
+            <div class="portfolio-item" data-category="Экокожа">
+                <img src="portfolio/ecoc.jpg" alt="Перетяжка руля Экокожа">
+                <div class="portfolio-overlay">
+                    <span class="portfolio-overlay__category">Экокожа</span>
+                    <h3 class="portfolio-overlay__title">Качественная экокожа</h3>
+                    <span class="portfolio-overlay__icon"><i class="fas fa-arrow-right"></i></span>
+                </div>
+            </div>
+
+            <!-- Работа 3:  -->
+            <div class="portfolio-item" data-category="натуральная кожа">
+                <img src="portfolio/natural.jpg" alt="Перетяжка руля натуральной кожей">
+                <div class="portfolio-overlay">
+                    <span class="portfolio-overlay__category">натуральная кожа</span>
+                    <h3 class="portfolio-overlay__title">Восстановление и перешив</h3>
+                    <span class="portfolio-overlay__icon"><i class="fas fa-arrow-right"></i></span>
+                </div>
+            </div>
+
+            <!-- Работа 4:  -->
+            <div class="portfolio-item" data-category="Карбон">
+                <img src="portfolio/carbonn.jpg" alt="Перетяжка руля карбоном">
+                <div class="portfolio-overlay">
+                    <span class="portfolio-overlay__category">Карбон</span>
+                    <h3 class="portfolio-overlay__title">Спортивный хват M-серии</h3>
+                    <span class="portfolio-overlay__icon"><i class="fas fa-arrow-right"></i></span>
+                </div>
+            </div>
+ <!-- Работа 5:  -->
+            <div class="portfolio-item" data-category="Nappa">
+                <img src="portfolio/nappa.jpg" alt="Перетяжка руля Nappa">
+                <div class="portfolio-overlay">
+                    <span class="portfolio-overlay__category">Nappa</span>
+                    <h3 class="portfolio-overlay__title">Новая серия</h3>
+                    <span class="portfolio-overlay__icon"><i class="fas fa-arrow-right"></i></span>
+                </div>
+            </div>
+             <!-- Работа 6:  -->
+            <div class="portfolio-item" data-category="New">
+                <img src="portfolio/new.jpg" alt="Новинка">
+                <div class="portfolio-overlay">
+                    <span class="portfolio-overlay__category">New</span>
+                    <h3 class="portfolio-overlay__title">Новинка</h3>
+                    <span class="portfolio-overlay__icon"><i class="fas fa-arrow-right"></i></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Призыв к действию -->
+        <div class="portfolio-cta">
+            <h3>Хотите такой же результат для своего авто?</h3>
+            <p>Оставьте заявку, и мы рассчитаем стоимость перетяжки именно для вашей модели.</p>
+            <a href="callback.html" class="btn btn--primary">Рассчитать стоимость</a>
+        </div>
+
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <p class="footer__address">Адрес: Республика Беларусь, Мозырь, Б-р Юности 52</p>
+        <a href="mailto:solonevicht@mail.ru">solonevicht@mail.ru</a>
+        <p>© 2025 StitchDrive</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

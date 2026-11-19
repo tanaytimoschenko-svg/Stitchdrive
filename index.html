@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>StitchDrive</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="logo/favicon (3).ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <!-- ===== HEADER ===== -->
+    <header>
+    <div class="contacts-block">
+    
+    <!-- СЛЕВА: Время работы в плашке -->
+    <div class="header-zone header-zone--left">
+        <div class="work-hours">
+            <span class="work-hours__label">Время работы</span>
+            <span class="work-hours__time">Пн-Пт: 09-19.00</span>
+            <span class="work-hours__time">Сб-Вс: 09-17.00</span>
+        </div>
+    </div>
+
+    <!-- Декоративный разделитель -->
+    <div class="header-divider"></div>
+
+    <!-- ПО ЦЕНТРУ: Логотип в рамке -->
+    <div class="header-zone header-zone--center">
+        <div class="logo-frame">
+            <img class="logo" src="logo/fullLogo.jpg" alt="Логотип StitchDrive">
+            <span class="logo-slogan">DRIVE AHEAD</span>
+        </div>
+    </div>
+
+    <!-- Декоративный разделитель -->
+    <div class="header-divider"></div>
+
+    <!-- СПРАВА: Телефон в пилюле + иконки -->
+    <div class="header-zone header-zone--right">
+        <a href="tel:+375445431344" class="phone-pill">
+            <span class="online-dot"></span>
+            <i class="fa-solid fa-phone"></i>
+            <span class="phone-pill__number">+375 44 543-13-44</span>
+        </a>
+        <div class="social-icons">
+            <a href="#" aria-label="Telegram"><i class="fa-brands fa-telegram"></i></a>
+            <a href="#" aria-label="Viber"><i class="fa-brands fa-viber"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+
+</div>
+
+    <!-- БЕГУЩАЯ СТРОКА с марками авто -->
+    <div class="marquee">
+        <div class="marquee__track">
+            <span>Mercedes-Benz</span>
+            <span class="marquee__dot">•</span>
+            <span>BMW</span>
+            <span class="marquee__dot">•</span>
+            <span>Audi</span>
+            <span class="marquee__dot">•</span>
+            <span>Volkswagen</span>
+            <span class="marquee__dot">•</span>
+            <span>Renault</span>
+            <span class="marquee__dot">•</span>
+            <span>Hyundai</span>
+            <span class="marquee__dot">•</span>
+            <span>Kia</span>
+            <span class="marquee__dot">•</span>
+            <span>Toyota</span>
+            <span class="marquee__dot">•</span>
+            <!-- ДУБЛЬ для бесшовной прокрутки -->
+            <span>Mercedes-Benz</span>
+            <span class="marquee__dot">•</span>
+            <span>BMW</span>
+            <span class="marquee__dot">•</span>
+            <span>Audi</span>
+            <span class="marquee__dot">•</span>
+            <span>Volkswagen</span>
+            <span class="marquee__dot">•</span>
+            <span>Renault</span>
+            <span class="marquee__dot">•</span>
+            <span>Hyundai</span>
+            <span class="marquee__dot">•</span>
+            <span>Kia</span>
+            <span class="marquee__dot">•</span>
+            <span>Toyota</span>
+            
+             <span class="marquee__dot">•</span>
+            <span>Chevrolet</span>
+            <span class="marquee__dot">•</span>
+            <span>Belgee, МАЗ, БелАЗ</span>
+             <span class="marquee__dot">•</span>
+            <span> Land Rover, Jaguar, Aston Martin, Bentley, Rolls-Royce, Mini
+</span>
+<span class="marquee__dot">•</span>
+            <span> Geely, Chery, Haval, Changan, Jetour, Omoda, Exeed, GAC, Zeekr, Voyah</span>
+        </div>
+    </div>
+</header>
+
+    <!-- ===== NAV ===== -->
+    <nav>
+        <ul class="top-nav">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="about.html">О нас</a></li>
+            <li><a href="portfolio.html">Портфолио</a></li>
+            <li><a href="services.html">Услуги</a></li>
+            <li><a href="price.html">Цены</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+    </nav>
+    
+
+   <!-- ===== HERO ===== -->
+<section class="hero">
+    <div class="hero__media">
+        <img src="img/base2.jpg" alt="Руль после перетяжки StitchDrive">
+        <div class="hero__overlay"></div>
+
+        <!-- МАТЕРИАЛЫ ВНУТРИ .hero__media, чтобы позиционировались от фото -->
+        <div class="hero__materials-overlay" role="group" aria-label="Материал перетяжки">
+            <button class="mat-chip-overlay is-active" data-material="leather" data-color="#C9A227" aria-pressed="true">
+                <i class="fas fa-check-circle"></i> Натуральная кожа
+            </button>
+            <button class="mat-chip-overlay" data-material="alcantara" data-color="#3EB3D2" aria-pressed="false">
+                <i class="fas fa-check-circle"></i> Алькантара
+            </button>
+            <button class="mat-chip-overlay" data-material="ecoleather" data-color="#7C93C4" aria-pressed="false">
+                <i class="fas fa-check-circle"></i> Экокожа
+            </button>
+            <button class="mat-chip-overlay" data-material="nappa" data-color="#D4A574" aria-pressed="false">
+                <i class="fas fa-check-circle"></i> Наппа (Премиум)
+            </button>
+            <button class="mat-chip-overlay" data-material="carbon" data-color="#9CA3AF" aria-pressed="false">
+                <i class="fas fa-check-circle"></i> Карбон (Вставки)
+            </button>
+        </div>
+    </div>
+
+    <div class="hero__card">
+      
+        <h1 class="hero__title"> Автоателье StitchDrive</h1>
+
+        <p class="hero__text">
+            Обновляем изношенную оплётку и возвращаем рулю приятную фактуру и надёжный хват.
+            Работаем с кожей, экокожей и алькантарой, прошиваем аккуратным швом вручную.
+            <span class="hero__mat-note" id="matNote">Материал: натуральная кожа — тёплая, мягкая, «дышит».</span>
+        </p>
+
+        <ul class="hero__features">
+            <li>
+                <i class="fas fa-shield-halved"></i>
+                <span><strong>Гарантия 12 месяцев</strong><br>на материалы и работу</span>
+            </li>
+            <li>
+                <i class="fas fa-bolt"></i>
+                <span><strong>Срок 1–2 дня</strong><br>без долгой записи в очередь</span>
+            </li>
+            <li>
+                <i class="fas fa-palette"></i>
+                <span><strong>Любой цвет и строчка</strong><br>под интерьер вашего авто</span>
+            </li>
+        </ul>
+
+        <a href="callback.html" class="btn btn--primary">Бесплатная консультация</a>
+    </div>
+
+  
+</section>
+  <!-- ДОРОГА С МАШИНОЙ ВНУТРИ HERO -->
+    <div class="hero__road">
+        <div class="road__line"></div>
+        <div class="car">
+            <div class="car__light"></div>
+            <img src="img/blackauto.png" alt="Автомобиль" class="car__img">
+        </div>
+    </div>
+
+    <!-- ===== TRUST BAR ===== -->
+
+    <section class="trust-bar">
+        <div class="trust-bar__item">
+            <span class="trust-bar__num">5+</span>
+            <span class="trust-bar__label">лет опыта</span>
+        </div>
+        <div class="trust-bar__item">
+            <span class="trust-bar__num">100%</span>
+            <span class="trust-bar__label">гарантия качества</span>
+        </div>
+        <div class="trust-bar__item">
+            <span class="trust-bar__num">500+</span>
+            <span class="trust-bar__label">довольных водителей</span>
+        </div>
+    </section>
+
+    <!-- ===== ABOUT PREVIEW ===== -->
+    <section class="about-preview">
+        <div class="about-preview__inner">
+            <h2>Автоателье <span class="text-accent">StitchDrive</span></h2>
+            <p>
+                Мы — команда мастеров, преданных идее преображения автомобиля
+                через деталь, которой вы касаетесь каждый день. Наша миссия —
+                дать вторую жизнь вашему рулю, сочетая безупречное качество,
+                современные материалы и индивидуальный подход.
+            </p>
+            <a href="about.html" class="btn btn--outline">Подробнее о нас</a>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <p class="footer__address">Адрес: Республика Беларусь, Мозырь, Б-р Юности 52</p>
+        <a href="mailto:solonevicht@mail.ru">solonevicht@mail.ru</a>
+        <p>© 2025 StitchDrive</p>
+    </footer>
+<script src="script.js"></script>
+</body>
+</html>
